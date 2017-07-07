@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import com.rance.chatui.R;
 import com.rance.chatui.adapter.EmotionGridViewAdapter;
 import com.rance.chatui.adapter.EmotionPagerAdapter;
-import com.rance.chatui.base.BaseFragment;
+import com.rance.chatui.base.BaseFragment2;
 import com.rance.chatui.base.MyApplication;
 import com.rance.chatui.util.Utils;
 import com.rance.chatui.util.EmotionUtils;
@@ -29,7 +29,7 @@ import butterknife.ButterKnife;
  * 作者：Rance on 2016/12/13 16:01
  * 邮箱：rance935@163.com
  */
-public class ChatEmotionFragment extends BaseFragment {
+public class ChatEmotionFragment extends BaseFragment2 {
     @Bind(R.id.fragment_chat_vp)
     ViewPager fragmentChatVp;
     @Bind(R.id.fragment_chat_group)

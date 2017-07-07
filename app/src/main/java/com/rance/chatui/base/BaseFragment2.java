@@ -15,7 +15,7 @@ import android.widget.Toast;
  * 作者：Rance on 2016/11/18 15:19
  * 邮箱：rance935@163.com
  */
-public class BaseFragment extends Fragment {
+public class BaseFragment2 extends Fragment {
     public Activity mActivity;
 
     @Nullable

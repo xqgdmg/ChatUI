@@ -112,9 +112,11 @@ public class MainActivity extends AppCompatActivity {
                 .bindToVoiceText(voiceText)
                 .build();
 
+        // 点击表情的时候，绑定 EditText（让表情显示到 editText）
         GlobalOnItemClickManagerUtils globalOnItemClickListener = GlobalOnItemClickManagerUtils.getInstance(this);
         globalOnItemClickListener.attachToEditText(editText);
 
+         // 消息列表
         chatAdapter = new ChatAdapter(this);
         layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);

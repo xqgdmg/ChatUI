@@ -77,6 +77,7 @@ public class EmotionInputDetector {
         mEditText.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                Log.e("haha","mEditText");
                 if (event.getAction() == MotionEvent.ACTION_UP && mEmotionLayout.isShown()) {
                     lockContentHeight();
                     hideEmotionLayout(true);
@@ -122,6 +123,7 @@ public class EmotionInputDetector {
         emotionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.e("haha","emotionButton");
                 if (mEmotionLayout.isShown()) {
                     if (isShowAdd) {
                         mViewPager.setCurrentItem(0);
@@ -154,6 +156,7 @@ public class EmotionInputDetector {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.e("haha","addButton");
                 if (mEmotionLayout.isShown()) {
                     if (isShowEmotion) {
                         mViewPager.setCurrentItem(1);
@@ -186,6 +189,7 @@ public class EmotionInputDetector {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.e("haha","sendButton");
                 mAddButton.setVisibility(View.VISIBLE);
                 mSendButton.setVisibility(View.GONE);
                 MessageInfo messageInfo = new MessageInfo();
@@ -201,6 +205,7 @@ public class EmotionInputDetector {
         voiceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.e("haha","voiceButton");
                 hideEmotionLayout(false);
                 hideSoftInput();
                 mVoiceText.setVisibility(mVoiceText.getVisibility() == View.GONE ? View.VISIBLE : View.GONE);

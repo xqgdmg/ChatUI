@@ -17,7 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rance.chatui.R;
-import com.rance.chatui.base.BaseFragment;
+import com.rance.chatui.base.BaseFragment2;
 import com.rance.chatui.enity.MessageInfo;
 import com.rance.chatui.util.Constants;
 
@@ -32,7 +32,7 @@ import butterknife.OnClick;
  * 作者：Rance on 2016/12/13 16:01
  * 邮箱：rance935@163.com
  */
-public class ChatFunctionFragment extends BaseFragment {
+public class ChatFunctionFragment extends BaseFragment2 {
     private View rootView;
     private static final int CROP_PHOTO = 2;
     private static final int REQUEST_CODE_PICK_IMAGE = 3;
